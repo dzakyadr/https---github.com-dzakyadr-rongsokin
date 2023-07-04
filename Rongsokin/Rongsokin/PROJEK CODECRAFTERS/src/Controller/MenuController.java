@@ -1,4 +1,4 @@
-package Controller.Controller;
+package Controller;
 
 public class MenuController {
     
