@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1550.0">
+         <image>
+            <Image url="@../Image/menufix.jpg" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="336.0" prefHeight="802.0" prefWidth="1214.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <AnchorPane layoutX="17.0" layoutY="18.0" prefHeight="223.0" prefWidth="1174.0" styleClass="background" stylesheets="@DesignView.css">
+                     <children>
+                        <AnchorPane layoutX="16.0" layoutY="12.0" prefHeight="200.0" prefWidth="366.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="14.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/multiple-users-silhouette_33308.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="97.0" layoutY="153.0" text="Jumlah pemesanan hari ini">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="181.0" layoutY="18.0" prefHeight="28.0" prefWidth="162.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="401.0" layoutY="10.0" prefHeight="200.0" prefWidth="366.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/money_1604644.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="169.0" layoutY="153.0" text="Jumlah pemesanan">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="183.0" layoutY="18.0" prefHeight="28.0" prefWidth="162.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="791.0" layoutY="10.0" prefHeight="200.0" prefWidth="366.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="14.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/box_3848913.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="194.0" layoutY="153.0" text="Produk tersedia">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="185.0" layoutY="18.0" prefHeight="28.0" prefWidth="162.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="291.0" prefHeight="485.0" prefWidth="1174.0" styleClass="background" stylesheets="@DesignView.css">
+                     <children>
+                        <AnchorPane layoutX="16.0" layoutY="18.0" prefHeight="448.0" prefWidth="614.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <AreaChart layoutX="57.0" layoutY="-9.0" prefHeight="448.0" prefWidth="614.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </AreaChart>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="652.0" layoutY="19.0" prefHeight="448.0" prefWidth="505.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <BarChart layoutX="3.0" layoutY="4.0" prefHeight="448.0" prefWidth="505.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="1036.0" layoutX="152.0" layoutY="267.0" startX="-133.20004272460938" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <AnchorPane layoutX="47.0" layoutY="70.0" prefHeight="802.4" prefWidth="1214.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="772.0" prefWidth="449.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <AnchorPane layoutX="149.0" layoutY="36.0" prefHeight="181.0" prefWidth="142.0" styleClass="background" stylesheets="@DesignView.css">
+                                 <children>
+                                    <ImageView fitHeight="181.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Button layoutY="156.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Import" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="50.0" layoutY="281.0" text="Product ID:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="69.0" layoutY="329.0" text="Kategori:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="379.0" text="Berat:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="89.0" layoutY="429.0" text="Harga:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="88.0" layoutY="478.0" text="Status:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="157.0" layoutY="283.0" prefHeight="26.0" prefWidth="244.0" />
+                              <ComboBox layoutX="157.0" layoutY="331.0" prefHeight="26.0" prefWidth="244.0" />
+                              <TextField layoutX="157.0" layoutY="381.0" prefHeight="26.0" prefWidth="244.0" />
+                              <TextField layoutX="157.0" layoutY="431.0" prefHeight="26.0" prefWidth="244.0" />
+                              <ComboBox layoutX="157.0" layoutY="480.0" prefHeight="26.0" prefWidth="244.0" />
+                              <Button layoutX="69.0" layoutY="599.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="117.0" text="Add" />
+                              <Button layoutX="258.0" layoutY="599.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="117.0" text="Update" />
+                              <Button layoutX="69.0" layoutY="684.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="117.0" text="Reset" />
+                              <Button layoutX="258.0" layoutY="684.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="117.0" text="Delete" />
+                              <Label layoutX="40.0" layoutY="528.0" text="Jenis Bahan:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="157.0" layoutY="530.0" prefHeight="26.0" prefWidth="244.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="485.0" layoutY="15.0" prefHeight="772.0" prefWidth="710.0" styleClass="gradient" stylesheets="@DesignView.css">
+                           <children>
+                              <TableView layoutX="14.0" layoutY="155.0" prefHeight="602.0" prefWidth="682.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Product ID" />
+                                  <TableColumn prefWidth="160.0" text="Kategori" />
+                                    <TableColumn minWidth="0.0" prefWidth="0.0" text="Berat" />
+                                    <TableColumn prefWidth="300.8001708984375" text="Harga" />
+                                    <TableColumn prefWidth="147.999755859375" text="Status" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="18.0" prefHeight="763.0" prefWidth="642.0" styleClass="gradient" stylesheets="@DesignView.css">
+                     <children>
+                        <TableView layoutX="14.0" layoutY="25.0" prefHeight="719.0" prefWidth="614.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="685.0" layoutY="18.0" prefHeight="763.0" prefWidth="506.0" styleClass="gradient" stylesheets="@DesignView.css">
+                     <children>
+                        <Label layoutX="75.0" layoutY="78.0" text="Kategori:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="141.0" text="Kuantitas:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="165.0" layoutY="81.0" prefHeight="26.0" prefWidth="298.0" />
+                        <Spinner layoutX="165.0" layoutY="143.0" prefHeight="26.0" prefWidth="298.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button layoutX="23.0" layoutY="478.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="274.0" text="Button" />
+      <Button layoutX="23.0" layoutY="551.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="274.0" text="Button">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="53.0" layoutY="627.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="244.0" styleClass="btncreate2" stylesheets="@DesignView.css" text="BELI BARANG">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="52.0" layoutY="553.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="244.0" styleClass="btncreate2" stylesheets="@DesignView.css" text="UNGGAH BARANG">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="52.0" layoutY="474.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="244.0" styleClass="btncreate2" stylesheets="@DesignView.css" text="BELI BARANG">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
