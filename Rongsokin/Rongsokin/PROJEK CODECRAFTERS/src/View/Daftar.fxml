@@ -7,20 +7,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DaftarController.java">
    <children>
       <ImageView fitHeight="800.0" fitWidth="1550.0">
          <image>
             <Image url="@../Image/daftarfix.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="995.0" layoutY="569.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="396.0" styleClass="daftarbutton" stylesheets="@DesignView.css" text="Register">
+      <Button fx:id="registerButton" layoutX="995.0" layoutY="569.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="396.0" styleClass="daftarbutton" stylesheets="@DesignView.css" text="Register">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <TextField layoutX="992.0" layoutY="279.0" prefHeight="52.0" prefWidth="400.0" />
-      <TextField layoutX="992.0" layoutY="369.0" prefHeight="52.0" prefWidth="400.0" />
-      <TextField layoutX="992.0" layoutY="467.0" prefHeight="52.0" prefWidth="400.0" />
+      <TextField fx:id="tfUname" layoutX="992.0" layoutY="279.0" prefHeight="52.0" prefWidth="400.0" />
+      <TextField fx:id="tfEmail" layoutX="992.0" layoutY="369.0" prefHeight="52.0" prefWidth="400.0" />
+      <TextField fx:id="tfPass" layoutX="992.0" layoutY="467.0" prefHeight="52.0" prefWidth="400.0" />
    </children>
 </AnchorPane>
